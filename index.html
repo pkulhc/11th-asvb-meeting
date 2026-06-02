@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="11th Scientific Meeting of the Asian Society for Vascular Biology, 11-14 June 2026, Singapore">
   <title>11th ASVB Scientific Meeting | Singapore 2026</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫀</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2307223d'/><text x='50' y='58' text-anchor='middle' font-size='28' fill='%23d8b66d' font-family='Arial'>ASVB</text></svg>">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="hero" id="top">
     <nav class="navbar">
-      <a class="logo" href="#top">
+      <a class="logo" href="#top" aria-label="ASVB 2026 homepage">
         <span class="logo-icon">ASVB</span>
         <span class="logo-text">2026</span>
       </a>
@@ -21,13 +21,14 @@
         <li><a href="#posters">Posters</a></li>
         <li><a class="btn-outline" href="assets/6.2-ASVB-Schedule.pdf">Download PDF</a></li>
       </ul>
-      <button class="mobile-toggle" aria-label="Menu">☰</button>
+      <button class="mobile-toggle" aria-label="Menu">Menu</button>
     </nav>
+
     <div class="hero-body">
       <p class="hero-eyebrow">Asian Society for Vascular Biology</p>
       <h1>The 11th Scientific Meeting of ASVB</h1>
       <div class="hero-meta">
-        <span class="hero-date">11 – 14 June 2026</span>
+        <span class="hero-date">11-14 June 2026</span>
         <span class="hero-divider"></span>
         <span class="hero-venue">National University of Singapore</span>
         <span class="hero-divider"></span>
@@ -38,79 +39,77 @@
         <a class="btn-secondary" href="assets/6.2-ASVB-Schedule.pdf">Download Latest Schedule</a>
       </div>
     </div>
+
     <div class="hero-stats">
       <div class="stat"><strong>4</strong><span>Days</span></div>
-      <div class="stat"><strong>42</strong><span>Talks</span></div>
+      <div class="stat"><strong>45</strong><span>Scientific talks</span></div>
       <div class="stat"><strong>54</strong><span>Posters</span></div>
-      <div class="stat"><strong>9+</strong><span>Countries</span></div>
+      <div class="stat"><strong>08:30</strong><span>Opening ceremony</span></div>
     </div>
   </header>
 
   <main>
-    <!-- DINNER NOTICE -->
     <section class="dinner-notice" id="dinner">
       <div class="dinner-card">
-        <span class="dinner-icon">🍽️</span>
+        <span class="dinner-icon">June 12</span>
         <div>
+          <p class="eyebrow">Conference Dinner</p>
           <h3>Dinner on June 12</h3>
-          <p>For invited speakers, chairs, judges, and council members — the dinner will be held from <strong>18:00 to 21:00</strong> at <strong>Jumbo Seafood – East Coast</strong>.</p>
-          <p>🚌 Bus pickup: <strong>NUS MD11 Auditorium at 17:45</strong>. Council members will walk together from the meeting room.</p>
+          <p>For invited speakers, chairs, judges, and council members, the dinner will be held from <strong>18:00 to 21:00</strong> at <strong>Jumbo Seafood - East Coast</strong>.</p>
+          <p>Bus pickup: <strong>NUS MD11 Auditorium at 17:45</strong>. Council members will walk together from the meeting room.</p>
         </div>
       </div>
     </section>
 
-    <!-- INFO -->
     <section id="info">
       <div class="section-header">
         <p class="eyebrow">General Information</p>
         <h2>Meeting Essentials</h2>
+        <p class="section-desc">A compact guide to the key venues, registration window, and opening program for all participants.</p>
       </div>
       <div class="info-grid">
         <div class="info-card">
           <dl class="info-dl">
-            <div><dt>Meeting Dates</dt><dd>June 11 – 14, 2026</dd></div>
+            <div><dt>Meeting Dates</dt><dd>June 11-14, 2026</dd></div>
             <div><dt>Main Venue</dt><dd>NUS MD11 Auditorium</dd></div>
             <div><dt>Registration</dt><dd>Starting from the afternoon of June 12</dd></div>
-            <div><dt>Council Meeting &amp; Pharm Visit</dt><dd>MD3 Level 4, General Office Meeting Room</dd></div>
+            <div><dt>Council Meeting &amp; Pharmacology Visit</dt><dd>MD3 Level 4, General Office Meeting Room</dd></div>
             <div><dt>Young Scholar Forum</dt><dd>NUS MD6-02-02A</dd></div>
-            <div><dt>Opening Ceremony</dt><dd>June 13, 08:30 AM · NUS MD11 Auditorium</dd></div>
+            <div><dt>Opening Ceremony</dt><dd>June 13, 08:30 AM - NUS MD11 Auditorium</dd></div>
           </dl>
         </div>
         <div class="info-image">
-          <img src="assets/singapore.jpg" alt="Singapore">
+          <img src="assets/singapore.jpg" alt="Singapore skyline">
         </div>
       </div>
     </section>
 
-    <!-- SCHEDULE -->
     <section id="schedule">
       <div class="section-header">
         <p class="eyebrow">Program</p>
         <h2>Conference Schedule</h2>
-        <p class="section-desc">Browse the program by date. Breaks and poster sessions are highlighted.</p>
+        <p class="section-desc">Browse the program by date. Scientific talks, poster windows, breaks, and logistics are separated for quick review.</p>
       </div>
-      <nav class="tabs" id="scheduleTabs"></nav>
+      <nav class="tabs" id="scheduleTabs" aria-label="Schedule tabs"></nav>
       <div class="schedule-content" id="scheduleContent"></div>
     </section>
 
-    <!-- POSTERS -->
     <section id="posters">
       <div class="section-header">
         <p class="eyebrow">Poster Session</p>
         <h2>Poster Presentations</h2>
-        <p class="section-desc">54 posters presented during breaks and lunch on June 13–14 at NUS MD11 Auditorium.</p>
+        <p class="section-desc">54 posters presented during breaks and lunch on June 13-14 at NUS MD11 Auditorium.</p>
       </div>
       <label class="search-box">
-        <span>🔍 Search posters</span>
-        <input id="posterSearch" type="search" placeholder="Search by presenter, title, or institution…">
+        <span>Search posters</span>
+        <input id="posterSearch" type="search" placeholder="Search by presenter, title, or institution">
       </label>
       <div class="poster-grid" id="posterGrid"></div>
     </section>
 
-    <!-- CLOSING -->
     <section class="closing">
       <div class="closing-visual">
-        <img src="assets/asvb-brand.jpg" alt="ASVB">
+        <img src="assets/asvb-brand.jpg" alt="ASVB meeting visual">
       </div>
       <div class="closing-text">
         <p class="eyebrow">Contact</p>
@@ -125,14 +124,14 @@
     <div class="footer-content">
       <div>
         <strong>11th ASVB Scientific Meeting</strong>
-        <p>Innovation · Precision · Collaboration</p>
+        <p>Innovation - Precision - Collaboration</p>
       </div>
       <div class="footer-links">
         <a href="assets/6.2-ASVB-Schedule.pdf">Latest Schedule PDF</a>
-        <a href="#top">Back to top ↑</a>
+        <a href="#top">Back to top</a>
       </div>
     </div>
-    <p class="footer-copy">© 2026 Asian Society for Vascular Biology. Hosted at National University of Singapore.</p>
+    <p class="footer-copy">2026 Asian Society for Vascular Biology. Hosted at National University of Singapore.</p>
   </footer>
 
   <script src="script.js"></script>

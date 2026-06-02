@@ -31,7 +31,7 @@ async function loadSchedule() {
       const btn = document.createElement('button');
       btn.textContent = day.date + ': ' + day.title;
       btn.dataset.index = i;
-      btn.addEventListener('click', () => showDay(i));
+      btn.addEventListener('click', () => showDay(i, true));
       tabs.appendChild(btn);
 
       const card = document.createElement('div');
@@ -41,20 +41,29 @@ async function loadSchedule() {
       content.appendChild(card);
     });
 
-    showDay(1);
-    tabs.children[1]?.classList.add('active');
+    const initial = getInitialDayIndex(data.days.length);
+    showDay(initial, false);
+    tabs.children[initial]?.classList.add('active');
   } catch (e) {
     content.innerHTML = '<p style="padding:24px;color:var(--muted)">Could not load schedule. <a href="assets/6.2-ASVB-Schedule.pdf" style="color:var(--blue-600)">Download the PDF here</a>.</p>';
   }
 }
 
-function showDay(index) {
+function showDay(index, updateHash = false) {
   document.querySelectorAll('.day-card').forEach(c => c.classList.remove('visible'));
   document.querySelectorAll('#scheduleTabs button').forEach(b => b.classList.remove('active'));
   const card = document.getElementById('day-' + index);
   const btn = document.querySelector('#scheduleTabs button[data-index="' + index + '"]');
   if (card) card.classList.add('visible');
   if (btn) btn.classList.add('active');
+  if (updateHash && history.replaceState) history.replaceState(null, '', '#day-' + index);
+}
+
+function getInitialDayIndex(dayCount) {
+  const match = location.hash.match(/^#day-(\d+)$/);
+  if (!match) return Math.min(1, dayCount - 1);
+  const index = Number(match[1]);
+  return Number.isInteger(index) && index >= 0 && index < dayCount ? index : Math.min(1, dayCount - 1);
 }
 
 function buildDayHTML(day) {
@@ -82,7 +91,7 @@ function buildDayHTML(day) {
     // Meta line
     let metaHTML = '';
     if (item.affiliation) {
-      metaHTML = '<p class="meta">' + (item.country ? esc(item.country) + ' · ' : '') + esc(item.affiliation) + '</p>';
+      metaHTML = '<p class="meta">' + (item.country ? esc(item.country) + ' - ' : '') + esc(item.affiliation) + '</p>';
     }
 
     return '<li class="schedule-item ' + cls + '">'
