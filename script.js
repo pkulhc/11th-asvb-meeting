@@ -24,8 +24,11 @@ async function loadSchedule() {
   if (!tabs || !content) return;
 
   try {
-    const res = await fetch('schedule-data.json');
-    const data = await res.json();
+    let data = window.ASVB_SCHEDULE_DATA;
+    if (!data) {
+      const res = await fetch('schedule-data.json');
+      data = await res.json();
+    }
 
     data.days.forEach((day, i) => {
       const btn = document.createElement('button');
