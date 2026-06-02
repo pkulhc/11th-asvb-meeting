@@ -3,608 +3,138 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>11th Scientific Meeting of ASVB</title>
+  <meta name="description" content="11th Scientific Meeting of the Asian Society for Vascular Biology, 11-14 June 2026, Singapore">
+  <title>11th ASVB Scientific Meeting | Singapore 2026</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫀</text></svg>">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <a class="brand" href="#top">ASVB 2026</a>
-      <div>
-        <a href="#schedule">Schedule</a>
-        <a href="#venue">Venue</a>
-        <a href="#posters">Posters</a>
-        <a class="nav-button" href="assets/6.2-ASVB-Schedule.pdf">Download PDF</a>
-      </div>
+  <header class="hero" id="top">
+    <nav class="navbar">
+      <a class="logo" href="#top">
+        <span class="logo-icon">ASVB</span>
+        <span class="logo-text">2026</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#posters">Posters</a></li>
+        <li><a class="btn-outline" href="assets/6.2-ASVB-Schedule.pdf">Download PDF</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-label="Menu">☰</button>
     </nav>
-    <div class="hero-content" id="top">
-      <p class="eyebrow">Asian Society for Vascular Biology</p>
+    <div class="hero-body">
+      <p class="hero-eyebrow">Asian Society for Vascular Biology</p>
       <h1>The 11th Scientific Meeting of ASVB</h1>
-      <p class="lead">11-14 June 2026 · Singapore · National University of Singapore, NUS MD11 Auditorium</p>
-      <div class="hero-actions">
-        <a class="primary" href="#schedule">View Schedule</a>
-        <a class="secondary" href="assets/6.2-ASVB-Schedule.pdf">Download Latest Schedule</a>
+      <div class="hero-meta">
+        <span class="hero-date">11 – 14 June 2026</span>
+        <span class="hero-divider"></span>
+        <span class="hero-venue">National University of Singapore</span>
+        <span class="hero-divider"></span>
+        <span>NUS MD11 Auditorium</span>
       </div>
+      <div class="hero-cta">
+        <a class="btn-primary" href="#schedule">Explore Schedule</a>
+        <a class="btn-secondary" href="assets/6.2-ASVB-Schedule.pdf">Download Latest Schedule</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>4</strong><span>Days</span></div>
+      <div class="stat"><strong>42</strong><span>Talks</span></div>
+      <div class="stat"><strong>54</strong><span>Posters</span></div>
+      <div class="stat"><strong>9+</strong><span>Countries</span></div>
     </div>
   </header>
 
   <main>
-    <section class="overview">
-      <article>
-        <strong>4</strong>
-        <span>Meeting days</span>
-      </article>
-      <article>
-        <strong>45</strong>
-        <span>Scientific talks and sessions</span>
-      </article>
-      <article>
-        <strong>54</strong>
-        <span>Poster presentations</span>
-      </article>
-      <article>
-        <strong>08:30</strong>
-        <span>Opening ceremony on June 13</span>
-      </article>
+    <!-- DINNER NOTICE -->
+    <section class="dinner-notice" id="dinner">
+      <div class="dinner-card">
+        <span class="dinner-icon">🍽️</span>
+        <div>
+          <h3>Dinner on June 12</h3>
+          <p>For invited speakers, chairs, judges, and council members — the dinner will be held from <strong>18:00 to 21:00</strong> at <strong>Jumbo Seafood – East Coast</strong>.</p>
+          <p>🚌 Bus pickup: <strong>NUS MD11 Auditorium at 17:45</strong>. Council members will walk together from the meeting room.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="info-grid" id="venue">
-      <div>
+    <!-- INFO -->
+    <section id="info">
+      <div class="section-header">
         <p class="eyebrow">General Information</p>
         <h2>Meeting Essentials</h2>
-        <dl>
-          <div><dt>Meeting dates</dt><dd>June 11-14, 2026</dd></div>
-          <div><dt>Main venue</dt><dd>NUS MD11 Auditorium</dd></div>
-          <div><dt>Registration</dt><dd>Starting from the afternoon of June 12</dd></div>
-          <div><dt>Council / Pharmacology visit</dt><dd>MD3 Level 4, General Office Meeting Room</dd></div>
-          <div><dt>Young Scholar Forum</dt><dd>NUS MD6-02-02A</dd></div>
-        </dl>
       </div>
-      <img src="assets/singapore.jpg" alt="Singapore skyline">
+      <div class="info-grid">
+        <div class="info-card">
+          <dl class="info-dl">
+            <div><dt>Meeting Dates</dt><dd>June 11 – 14, 2026</dd></div>
+            <div><dt>Main Venue</dt><dd>NUS MD11 Auditorium</dd></div>
+            <div><dt>Registration</dt><dd>Starting from the afternoon of June 12</dd></div>
+            <div><dt>Council Meeting &amp; Pharm Visit</dt><dd>MD3 Level 4, General Office Meeting Room</dd></div>
+            <div><dt>Young Scholar Forum</dt><dd>NUS MD6-02-02A</dd></div>
+            <div><dt>Opening Ceremony</dt><dd>June 13, 08:30 AM · NUS MD11 Auditorium</dd></div>
+          </dl>
+        </div>
+        <div class="info-image">
+          <img src="assets/singapore.jpg" alt="Singapore">
+        </div>
+      </div>
     </section>
 
-    <section class="schedule-section" id="schedule">
-      <div class="section-title">
+    <!-- SCHEDULE -->
+    <section id="schedule">
+      <div class="section-header">
         <p class="eyebrow">Program</p>
         <h2>Conference Schedule</h2>
-        <p>Browse the latest program by date and venue. Breaks and poster presentation windows are highlighted in blue.</p>
+        <p class="section-desc">Browse the program by date. Breaks and poster sessions are highlighted.</p>
       </div>
-      <div class="tabs" aria-label="Schedule navigation">
-        <a href="#day-0">June 11</a>
-        <a href="#day-1">June 12</a>
-        <a href="#day-2">June 13 Main</a>
-        <a href="#day-3">June 14 Main</a>
-        <a href="#day-4">Young Scholar Forum</a>
-      </div>
-      
-            <section class="day-card" id="day-0">
-              <div class="day-head">
-                <span>Thursday</span>
-                <h3>June 11</h3>
-                <p>Arrival</p>
-                <small>NUS / Singapore</small>
-              </div>
-              <ol class="schedule-list">
-                <li class='schedule-item logistics'><time>All Day</time><div><h4>Arrival</h4><div class='badges'></div></div></li>
-              </ol>
-            </section>
-            
-
-            <section class="day-card" id="day-1">
-              <div class="day-head">
-                <span>Friday</span>
-                <h3>June 12</h3>
-                <p>Registration, Visits &amp; Council Meeting</p>
-                <small>NUS campus</small>
-              </div>
-              <ol class="schedule-list">
-                <li class='schedule-item logistics'><time>9:00-12:00</time><div><h4>NUS Campus Visit</h4><div class='badges'></div></div></li><li class='schedule-item logistics'><time>15:00-18:00</time><div><h4>Registration (NUS MD11 Auditorium) / Visit</h4><div class='badges'></div></div></li><li class='schedule-item logistics'><time>15:00-16:00</time><div><h4>NUS Yong Loo Lin School of Medicine Visit</h4><div class='badges'></div></div></li><li class='schedule-item logistics'><time>16:00-17:00</time><div><h4>NUS Pharmacology Department Visit</h4><div class='badges'><span class='speaker'>Venue: MD3 Level 4, general office meeting room</span></div></div></li><li class='schedule-item talk'><time>17:00-18:00</time><div><h4>Council Meeting</h4><div class='badges'><span class='speaker'>Venue: MD3 Level 4, general office meeting room</span></div></div></li>
-              </ol>
-            </section>
-            
-
-            <section class="day-card" id="day-2">
-              <div class="day-head">
-                <span>Saturday</span>
-                <h3>June 13</h3>
-                <p>Main Scientific Session Day 1</p>
-                <small>NUS MD11 Auditorium</small>
-              </div>
-              <ol class="schedule-list">
-                <li class='section-row'><strong>Opening Ceremony</strong></li><li class='schedule-item talk'><time>8:30-8:35</time><div><h4>Opening Remarks</h4><p class='meta'>ASVB President · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Chair: Susan W.S. Leung</span><span class='speaker'>Jinsong Bian</span></div></div></li><li class='schedule-item logistics'><time>8:35-8:40</time><div><h4>Group Photo</h4><div class='badges'><span class='badge'>Chair: Susan W.S. Leung</span></div></div></li><li class='section-row'><strong>Paul M. Vanhoutte Memorial Lecture</strong></li><li class='schedule-item talk'><time>8:40-9:10</time><div><h4>Vascular Remodeling Signals：Receptors from Membrane to Nucleus</h4><p class='meta'>China · East China Normal University</p><div class='badges'><span class='badge'>Chair: Jinsong Bian</span><span class='speaker'>Nanping Wang</span></div></div></li><li class='section-row'><strong>Section I (12min + 3min QA/15min + 5min QA)</strong></li><li class='schedule-item talk'><time>9:10-9:30</time><div><h4>Innate Immunity and Vascular Injury</h4><p class='meta'>China · Xinhua Hospital Affiliated to Shanghai Jiao Tong University School of Medicine</p><div class='badges'><span class='badge'>Chairs: Yi Zhu, Nanping Wang</span><span class='speaker'>Alex FY Chen</span></div></div></li><li class='schedule-item talk'><time>9:30-9:50</time><div><h4>Vascular Inflammaging in Infectious Diseases and Cancer</h4><p class='meta'>Japan · Hokkaido University</p><div class='badges'><span class='badge'>Chairs: Yi Zhu, Nanping Wang</span><span class='speaker'>Kyoko Hida</span></div></div></li><li class='schedule-item talk'><time>9:50-10:05</time><div><h4>3D Genome Regulation in Cardiovascular Disease</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Chairs: Yi Zhu, Nanping Wang</span><span class='speaker'>Yuliang Feng</span></div></div></li><li class='schedule-item logistics'><time>10:05-10:25</time><div><h4>Break / Poster Presentation</h4><div class='badges'><span class='badge'>Chairs: Yi Zhu, Nanping Wang</span></div></div></li><li class='schedule-item talk'><time>10:25-10:45</time><div><h4>Seeing Disease as It Happens In Vivo: The Power of Intravital Microscopy</h4><p class='meta'>Korea · Korea Advanced Institute of Science and Technology</p><div class='badges'><span class='badge'>Chairs: Shigetomo Fukuhara, Wing Tak Jack Wong</span><span class='speaker'>Pilhan Kim</span></div></div></li><li class='schedule-item talk'><time>10:45-11:05</time><div><h4>Dll4 Signaling for Cerebrospinal Vascular Homeostasis</h4><p class='meta'>Korea · Korea Advanced Institute of Science and Technology</p><div class='badges'><span class='badge'>Chairs: Shigetomo Fukuhara, Wing Tak Jack Wong</span><span class='speaker'>Injune Kim</span></div></div></li><li class='schedule-item talk'><time>11:05-11:25</time><div><h4>GlycoMedines: A Spoonful of Sugar Helps the Medicine Go Down</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Chairs: Shigetomo Fukuhara, Wing Tak Jack Wong</span><span class='speaker'>Peng George Wang</span></div></div></li><li class='schedule-item talk'><time>11:25-11:45</time><div><h4>Matrix Metalloproteinase-7 Contributes to Endothelial Dysfunction in Atherosclerosis</h4><p class='meta'>Hong Kong, China · University of Hong Kong</p><div class='badges'><span class='badge'>Chairs: Shigetomo Fukuhara, Wing Tak Jack Wong</span><span class='speaker'>Susan W.S. Leung</span></div></div></li><li class='schedule-item talk'><time>11:45-12:00</time><div><h4>Transcriptional Regulation of Heart Development</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Chairs: Shigetomo Fukuhara, Wing Tak Jack Wong</span><span class='speaker'>Yangpo Cao</span></div></div></li><li class='schedule-item logistics'><time>12:00-14:00</time><div><h4>Lunch / Poster Presentation (Venue: NUS MD11 Auditorium)</h4><div class='badges'><span class='badge'>Chairs: Shigetomo Fukuhara, Wing Tak Jack Wong</span></div></div></li><li class='section-row'><strong>Section II (12min + 3min QA/15min + 5min QA)</strong></li><li class='schedule-item talk'><time>14:00-14:20</time><div><h4>Vascular Protection Through AGE–RAGE Modulation: Evidence from Lignosus rhinocerus Supplementation in High-Fat Diet-Induced Obese Mice</h4><p class='meta'>Malaysia · University Malaya</p><div class='badges'><span class='badge'>Chairs: Suowen Xu, Li Wang</span><span class='speaker'>Dharmani Devi Murugan</span></div></div></li><li class='schedule-item talk'><time>14:20-14:40</time><div><h4>Co-administration of CCL5 with Plerixafor and GROβ Enhances Hematopoietic Stem Cell Mobilization by Modulating Bone Marrow Endothelial Remodeling</h4><p class='meta'>Korea · Pusan National University School of Medicine</p><div class='badges'><span class='badge'>Chairs: Suowen Xu, Li Wang</span><span class='speaker'>Dongjun Lee</span></div></div></li><li class='schedule-item talk'><time>14:40-15:00</time><div><h4>Age-associated Erosion of Organ-specific Endothelial Programs Compromises Tissue Function and Resilience</h4><p class='meta'>Japan · Nippon Medical School</p><div class='badges'><span class='badge'>Chairs: Suowen Xu, Li Wang</span><span class='speaker'>Shigetomo Fukuhara</span></div></div></li><li class='schedule-item talk'><time>15:00-15:20</time><div><h4>Amelioration of Obesity-induced Vascular Dysfunction by Marine Peptides</h4><p class='meta'>Macau, China · University of Macau</p><div class='badges'><span class='badge'>Chairs: Suowen Xu, Li Wang</span><span class='speaker'>Wai San Cheang</span></div></div></li><li class='schedule-item talk'><time>15:20-15:40</time><div><h4>Mitochondrial Therapy Reverses Pro-inflammatory Exosome Signaling to Restore Vascular Endothelial Function</h4><p class='meta'>Taiwan, China · National Cheng Kung University</p><div class='badges'><span class='badge'>Chairs: Suowen Xu, Li Wang</span><span class='speaker'>Chia-Ching (Josh) Wu</span></div></div></li><li class='schedule-item logistics'><time>15:40-16:00</time><div><h4>Break / Poster Presentation</h4><div class='badges'><span class='badge'>Chairs: Suowen Xu, Li Wang</span></div></div></li><li class='schedule-item talk'><time>16:00-16:20</time><div><h4>Sam68: A Versatile and Context-Dependent Metabolic Regulator</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Chairs: Wai San Cheang, Yangpo Cao</span><span class='speaker'>Gangjian Qin</span></div></div></li><li class='schedule-item talk'><time>16:20-16:35</time><div><h4>The Multifaceted Roles of PD-L1 in Metabolic Syndromes</h4><p class='meta'>Hong Kong, China · The Chinese University of Hong Kong</p><div class='badges'><span class='badge'>Chairs: Wai San Cheang, Yangpo Cao</span><span class='speaker'>Wing Tak Jack Wong</span></div></div></li><li class='schedule-item talk'><time>16:35-16:50</time><div><h4>Endothelial Inflammation and Atherosclerosis: From Mechanism to Therapies</h4><p class='meta'>China · University of Science and Technology of China</p><div class='badges'><span class='badge'>Chairs: Wai San Cheang, Yangpo Cao</span><span class='speaker'>Suowen Xu</span></div></div></li><li class='schedule-item talk'><time>16:50-17:05</time><div><h4>From Mechanotransduction to Drug Discovery</h4><p class='meta'>Hong Kong, China · City University of Hong Kong</p><div class='badges'><span class='badge'>Chairs: Wai San Cheang, Yangpo Cao</span><span class='speaker'>Li Wang</span></div></div></li><li class='schedule-item talk'><time>17:05-17:20</time><div><h4>Effects and Mechanisms of Angiopoietin-like 4, a Blood Vessel Regulator, in Immune Responses and Fibrosis Development</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Chairs: Wai San Cheang, Yangpo Cao</span><span class='speaker'>Liang Li</span></div></div></li><li class='schedule-item talk'><time>17:20-17:35</time><div><h4>Macrophage and Inflammation Resolution in AAA</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Chairs: Wai San Cheang, Yangpo Cao</span><span class='speaker'>Haocheng Lu</span></div></div></li><li class='schedule-item logistics'><time>18:00-20:00</time><div><h4>Dinner</h4><p class='meta'>(Bus pickup point at 18:00, NUS MD11 Auditorium)</p><div class='badges'><span class='badge'>Chairs: Wai San Cheang, Yangpo Cao</span><span class='speaker'>Venue: Imperial Restaurant</span></div></div></li>
-              </ol>
-            </section>
-            
-
-            <section class="day-card" id="day-3">
-              <div class="day-head">
-                <span>Sunday</span>
-                <h3>June 14</h3>
-                <p>Main Scientific Session Day 2</p>
-                <small>NUS MD11 Auditorium</small>
-              </div>
-              <ol class="schedule-list">
-                <li class='section-row'><strong>Section III (12min + 3min QA/15min + 5min QA)</strong></li><li class='schedule-item talk'><time>8:30-8:50</time><div><h4>Mechanism Based Therapies for Cardiometabolic Diseases</h4><p class='meta'>Singapore · Duke-NUS Medical School</p><div class='badges'><span class='badge'>Chairs: Gangjian Qin, Xiaowei Nie, Shuang Wang</span><span class='speaker'>Yibing Wang</span></div></div></li><li class='schedule-item talk'><time>8:50-9:10</time><div><h4>Lifelong Exercise Attenuates Age-Related Vascular Stiffness Independent of Blood Pressure. A Potential Role for Perivascular Adipose Tissue?</h4><p class='meta'>Germany · University Medicine Greifswald</p><div class='badges'><span class='badge'>Chairs: Gangjian Qin, Xiaowei Nie, Shuang Wang</span><span class='speaker'>Maik Gollasch</span></div></div></li><li class='schedule-item talk'><time>9:10-9:30</time><div><h4>Liver–Vascular–Immune Axis in Metabolic Liver Disease–Associated Vasculopathy</h4><p class='meta'>Singapore · Nanyang Technological University</p><div class='badges'><span class='badge'>Chairs: Gangjian Qin, Xiaowei Nie, Shuang Wang</span><span class='speaker'>Christine Cheung</span></div></div></li><li class='schedule-item talk'><time>9:30-9:45</time><div><h4>Non-classical Role of Hepatic Transcriptional Factor ChREBP in Cardiac Remodeling</h4><p class='meta'>China · Hefei University of Technology</p><div class='badges'><span class='badge'>Chairs: Gangjian Qin, Xiaowei Nie, Shuang Wang</span><span class='speaker'>Shuang Zhang</span></div></div></li><li class='schedule-item talk'><time>9:45-10:00</time><div><h4>Mitochondria-mediated Integrated Stress Response in Endothelial Dysfunction and Atherosclerosis</h4><p class='meta'>Hong Kong, China · The Chinese University of Hong Kong</p><div class='badges'><span class='badge'>Chairs: Gangjian Qin, Xiaowei Nie, Shuang Wang</span><span class='speaker'>Xiaoyu Tian</span></div></div></li><li class='schedule-item logistics'><time>10:00-10:20</time><div><h4>Break / Poster Presentation</h4><div class='badges'><span class='badge'>Chairs: Gangjian Qin, Xiaowei Nie, Shuang Wang</span></div></div></li><li class='schedule-item talk'><time>10:20-10:40</time><div><h4>Unveiling the Role of Mitochondrial Energy Metabolism in Regulating Blood-Brain Barrier Integrity</h4><p class='meta'>Korea · ChungNam National University</p><div class='badges'><span class='badge'>Chairs: Maik Gollasch, Haocheng Lu</span><span class='speaker'>Jun Young Heo</span></div></div></li><li class='schedule-item talk'><time>10:40-10:55</time><div><h4>Functional Heterogeneity of Dopamine Responses in Human Intrarenal Arteries</h4><p class='meta'>China · Peking University</p><div class='badges'><span class='badge'>Chairs: Maik Gollasch, Haocheng Lu</span><span class='speaker'>Yahan Liu</span></div></div></li><li class='schedule-item talk'><time>10:55-11:10</time><div><h4>The Chemokine CCL17 is a Novel Therapeutic Target for Cardiovascular Aging and Aging-related Disease</h4><p class='meta'>China · Zhongshan Hospital Fudan University</p><div class='badges'><span class='badge'>Chairs: Maik Gollasch, Haocheng Lu</span><span class='speaker'>Yang Zhang</span></div></div></li><li class='schedule-item talk'><time>11:10-11:25</time><div><h4>Endothelial and Smooth Muscle Cell Dysfunction in Vascular Diseases: From Molecular Mechanisms to Therapeutic Targets</h4><p class='meta'>China · Nanjing Medical University</p><div class='badges'><span class='badge'>Chairs: Maik Gollasch, Haocheng Lu</span><span class='speaker'>Shanshan Luo</span></div></div></li><li class='schedule-item talk'><time>11:25-11:40</time><div><h4>Phenotypic Switching of Vascular Smooth Muscle Cells and Aortic Dissection</h4><p class='meta'>China · The Eighth Affiliated Hospital of Sun Yat-sen University</p><div class='badges'><span class='badge'>Chairs: Maik Gollasch, Haocheng Lu</span><span class='speaker'>Tingting Zhang</span></div></div></li><li class='section-row'><strong>Closing Ceremony</strong></li><li class='schedule-item event'><time>11:40-11:50</time><div><h4>Awards Presentation</h4><div class='badges'><span class='badge'>Chair: Haocheng Lu</span></div></div></li><li class='schedule-item talk'><time>11:50-12:00</time><div><h4>Closing Remarks</h4><p class='meta'>China · East China Normal University</p><div class='badges'><span class='badge'>Chair: Haocheng Lu</span><span class='speaker'>Nanping Wang</span></div></div></li><li class='schedule-item logistics'><time>12:00-14:00</time><div><h4>Lunch</h4><div class='badges'><span class='badge'>Chair: Haocheng Lu</span><span class='speaker'>Venue: NUS MD11 Auditorium</span></div></div></li>
-              </ol>
-            </section>
-            
-
-            <section class="day-card" id="day-4">
-              <div class="day-head">
-                <span>Saturday</span>
-                <h3>June 13</h3>
-                <p>Young Scholar Forum</p>
-                <small>NUS MD6-02-02A</small>
-              </div>
-              <ol class="schedule-list">
-                <li class='schedule-item event'><time></time><div><h4>(12min + 3min QA)</h4><div class='badges'><span class='badge'>Judges: Christine Cheung, Injune Kim, Haocheng Lu, Yang Yang</span></div></div></li><li class='schedule-item talk'><time>14:15-14:30</time><div><h4>Viral Hepatitis Established an ANGPTL4-centred Inflammatory-vascular Niche Linked to Hepatocellular Cancerization</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Judges: Christine Cheung, Injune Kim, Haocheng Lu, Yang Yang</span><span class='speaker'>Shumin Liao</span></div></div></li><li class='schedule-item talk'><time>14:30-14:45</time><div><h4>In Vivo Longitudinal Imaging of the Choroid Plexus Vasculature Using a Cranial Imaging</h4><p class='meta'>Korea · Korea Advanced Institute of Science and Technology</p><div class='badges'><span class='badge'>Judges: Christine Cheung, Injune Kim, Haocheng Lu, Yang Yang</span><span class='speaker'>Kyu Suk Cho</span></div></div></li><li class='schedule-item talk'><time>14:45-15:00</time><div><h4>Endogenous NO Generation and Vascular Homeostasis via the Nitrate-Sialin2-Endosomal PI3K-AKT-eNOS Pathway</h4><p class='meta'>China · Capital Medical University</p><div class='badges'><span class='badge'>Judges: Christine Cheung, Injune Kim, Haocheng Lu, Yang Yang</span><span class='speaker'>Xiaoyu Li</span></div></div></li><li class='schedule-item talk'><time>15:00-15:15</time><div><h4>KLF13 Regulates Large Vessel Aging by Maintaining Endothelial Homeostasis</h4><p class='meta'>China · The Fifth Affiliated Hospital of Sun Yat-sen University</p><div class='badges'><span class='badge'>Judges: Christine Cheung, Injune Kim, Haocheng Lu, Yang Yang</span><span class='speaker'>Liyuan Huang</span></div></div></li><li class='schedule-item talk'><time>15:15-15:30</time><div><h4>Identification of TBK1 as a Driver of EndMT in Atherogenesis with Proteomics and Single-Cell Transcriptomics</h4><p class='meta'>Hong Kong, China · City University of Hong Kong Shenzhen Research Institute</p><div class='badges'><span class='badge'>Judges: Christine Cheung, Injune Kim, Haocheng Lu, Yang Yang</span><span class='speaker'>Yujie Pu</span></div></div></li><li class='schedule-item talk'><time>15:30-15:45</time><div><h4>PLK4 Promotes Hypoxia-Induced Pulmonary Hypertension by Accelerating Smooth Muscle Cell Mitosis</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Judges: Christine Cheung, Injune Kim, Haocheng Lu, Yang Yang</span><span class='speaker'>Lixin Huang</span></div></div></li><li class='schedule-item logistics'><time>15:45-16:00</time><div><h4>Break / Poster Presentation</h4><div class='badges'><span class='badge'>Judges: Christine Cheung, Injune Kim, Haocheng Lu, Yang Yang</span></div></div></li><li class='schedule-item talk'><time>16:00-16:15</time><div><h4>TXNDC5 Governs Extracellular Matrix Homeostasis in Pulmonary Hypertension</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Judges: Pilhan Kim, Susan W.S. Leung, Lian He, Yijin Wang, Mo Chen</span><span class='speaker'>Zhen Chen</span></div></div></li><li class='schedule-item talk'><time>16:15-16:30</time><div><h4>RNA 8-Oxoguanine Modification: A Novel Therapeutic Target and Biomarker in Pulmonary Hypertension</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Judges: Pilhan Kim, Susan W.S. Leung, Lian He, Yijin Wang, Mo Chen</span><span class='speaker'>Junting Zhang</span></div></div></li><li class='schedule-item talk'><time>16:30-16:45</time><div><h4>Deciphering the Mechanistic Underpinnings of Hepatitis E Severity: a Tale of T Cell Exhaustion and Maladaptive cDC2 Activation at Single-cell Resolution</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Judges: Pilhan Kim, Susan W.S. Leung, Lian He, Yijin Wang, Mo Chen</span><span class='speaker'>Xiaoman Liu</span></div></div></li><li class='schedule-item talk'><time>16:45-17:00</time><div><h4>Bioorthogonal Profiling of Hepatocyte-derived Small Extracellular Vesicles Identifies MAN1A1 as a Target for Capture from Plasma</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Judges: Pilhan Kim, Susan W.S. Leung, Lian He, Yijin Wang, Mo Chen</span><span class='speaker'>Chaoshan Han</span></div></div></li><li class='schedule-item talk'><time>17:00-17:15</time><div><h4>Sam68 Limits Glucose Oxidation to Exacerbate Cardiac Hypertrophy and Failure</h4><p class='meta'>China · Southern University of Science and Technology</p><div class='badges'><span class='badge'>Judges: Pilhan Kim, Susan W.S. Leung, Lian He, Yijin Wang, Mo Chen</span><span class='speaker'>Junqing An</span></div></div></li><li class='schedule-item talk'><time>17:15-17:30</time><div><h4>A Calcium-Complexed Nanonetwork Remodels Tumor Vasculature and Physically Encapsulates Tumors to Inhibit Invasion and Distant Metastasis</h4><p class='meta'>China · University of Chinese Academy of Sciences</p><div class='badges'><span class='badge'>Judges: Pilhan Kim, Susan W.S. Leung, Lian He, Yijin Wang, Mo Chen</span><span class='speaker'>Mingyuan Li</span></div></div></li>
-              </ol>
-            </section>
-            
+      <nav class="tabs" id="scheduleTabs"></nav>
+      <div class="schedule-content" id="scheduleContent"></div>
     </section>
 
-    <section class="posters" id="posters">
-      <div class="section-title">
+    <!-- POSTERS -->
+    <section id="posters">
+      <div class="section-header">
         <p class="eyebrow">Poster Session</p>
         <h2>Poster Presentations</h2>
-        <p>Poster presentation windows are scheduled during breaks and lunch on June 13-14 at NUS MD11 Auditorium.</p>
+        <p class="section-desc">54 posters presented during breaks and lunch on June 13–14 at NUS MD11 Auditorium.</p>
       </div>
-      <label class="search-label">Search posters
-        <input id="posterSearch" type="search" placeholder="Search by presenter, title, or institution">
+      <label class="search-box">
+        <span>🔍 Search posters</span>
+        <input id="posterSearch" type="search" placeholder="Search by presenter, title, or institution…">
       </label>
-      <div class="poster-grid" id="posterGrid">
-        
-            <article class="poster-card" data-poster-text="fanhao kong ctsk⁺ macrophage–driven angiogenic impairment contributes to pulmonary hypertension southern university of science and technology">
-              <span class="poster-no">#1</span>
-              <h4>CTSK⁺ Macrophage–Driven Angiogenic Impairment Contributes to Pulmonary Hypertension</h4>
-              <p>Fanhao Kong</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="leying li tbk1 functions as a novel regulator of vascular wall remodeling in hypertension city university of hong kong, hong kong sar, china">
-              <span class="poster-no">#2</span>
-              <h4>TBK1 functions as a novel regulator of vascular wall remodeling in hypertension</h4>
-              <p>Leying LI</p>
-              <small>City University of Hong Kong, Hong Kong SAR, China</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="lingchao miao psgl-1 mediated biomimetic drug delivery system for targeted and immune treatment of atherosclerosis guangdong pharmaceutical university">
-              <span class="poster-no">#3</span>
-              <h4>PSGL-1 mediated biomimetic drug delivery system for targeted and immune treatment of atherosclerosis</h4>
-              <p>Lingchao Miao</p>
-              <small>Guangdong Pharmaceutical University</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="meitong liu 刘美彤 design, synthesis and activity study of glycosylated antibody-drug conjugates southern university of science and technology">
-              <span class="poster-no">#4</span>
-              <h4>Design, Synthesis and Activity Study of Glycosylated Antibody-Drug Conjugates</h4>
-              <p>Meitong Liu 刘美彤</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="min joung lee nad⁺-mediated mitochondrial modulation protects blood–brain barrier integrity in acute brain injury chungnam national university school of medicine">
-              <span class="poster-no">#5</span>
-              <h4>NAD⁺-mediated mitochondrial modulation protects blood–brain barrier integrity in acute brain injury</h4>
-              <p>Min Joung Lee</p>
-              <small>Chungnam National University School of Medicine</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="pan, jingwen multilevel dysregulation of caveolin-1 in the pathogenesis of abdominal aortic aneurysm the university of hong kong">
-              <span class="poster-no">#6</span>
-              <h4>Multilevel Dysregulation of Caveolin-1 in the Pathogenesis of Abdominal Aortic Aneurysm</h4>
-              <p>PAN, Jingwen</p>
-              <small>The University of Hong Kong</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="ruixin zhou rewiring of 3d enhancer-promoter interactome underlies diabetic endothelial dysfunction southern university of science and technology">
-              <span class="poster-no">#7</span>
-              <h4>Rewiring of 3D Enhancer-Promoter Interactome Underlies Diabetic Endothelial Dysfunction</h4>
-              <p>Ruixin Zhou</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="woo-seong hong lutein suppresses macrophage inflammasome priming through redox-associated ho-1 signaling: implications for vascular inflammation gyeongkuk national university">
-              <span class="poster-no">#8</span>
-              <h4>Lutein Suppresses Macrophage Inflammasome Priming through Redox-Associated HO-1 Signaling: Implications for Vascular Inflammation</h4>
-              <p>woo-seong Hong</p>
-              <small>Gyeongkuk National University</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="yiying li magp2 contributes to pulmonary vascular remodeling in hypoxic pulmonary hypertension shenzhen people’s hospital">
-              <span class="poster-no">#9</span>
-              <h4>MAGP2 contributes to pulmonary vascular remodeling in hypoxic Pulmonary Hypertension</h4>
-              <p>Yiying Li</p>
-              <small>Shenzhen People’s Hospital</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="yuan sun cyclic tensile strain-induced ferroptosis in human aortic  mooth muscle cells by recognizing m6a-methylated heme oxygenase-1 mrna mediated by insulin-like growth factor 2 mrna binding protein 1 the university of hong kong">
-              <span class="poster-no">#10</span>
-              <h4>Cyclic Tensile Strain-Induced Ferroptosis in Human Aortic  mooth Muscle Cells by Recognizing m6A-Methylated Heme oxygenase-1 mRNA mediated by Insulin-like Growth Factor 2 mRNA Binding Protein 1</h4>
-              <p>Yuan Sun</p>
-              <small>The University of Hong Kong</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="zhao yaping/赵亚萍 distinct sex-specific characteristics of apoe deficient and ldlr deficient mice in atherosclerosis: implications for model selection and therapy development city university of hong kong">
-              <span class="poster-no">#11</span>
-              <h4>Distinct Sex-Specific Characteristics of Apoe Deficient and Ldlr Deficient Mice in Atherosclerosis: Implications for Model Selection and Therapy Development</h4>
-              <p>ZHAO Yaping/赵亚萍</p>
-              <small>City University of Hong Kong</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="ziping wang targeting nkaα1 with a novel peptide to treat pulmonary fibrosis southern university of science and technology">
-              <span class="poster-no">#12</span>
-              <h4>Targeting NKAα1 with a Novel Peptide to Treat Pulmonary Fibrosis</h4>
-              <p>Ziping Wang</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="乔军 genome-wide insights into the shared genetic landscape between metabolic dysfunction-associated fatty liver disease and cardiovascular diseases southern university of science and technology">
-              <span class="poster-no">#13</span>
-              <h4>Genome-wide insights into the shared genetic landscape between metabolic dysfunction-associated fatty liver disease and cardiovascular diseases</h4>
-              <p>乔军</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="余婷婷tingting yu prostaglandin i₂ receptor activation promotes alveolar regeneration via the jun/p53 pathway 天津医科大学/tianjin medical university">
-              <span class="poster-no">#14</span>
-              <h4>Prostaglandin I₂ Receptor Activation Promotes Alveolar Regeneration via the JUN/p53 Pathway</h4>
-              <p>余婷婷Tingting Yu</p>
-              <small>天津医科大学/Tianjin Medical University</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="倪洁 tbx5 is required for postnatal ventricular cardiomyocyte cell cycle progression southern university of science and technology">
-              <span class="poster-no">#15</span>
-              <h4>Tbx5 is required for postnatal ventricular cardiomyocyte cell cycle progression</h4>
-              <p>倪洁</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="冯倩倩/feng qianqian the role of usp10-induced mettl3 deubiquitination in endothelium-dependent vasodilation impairment and hypertension 天津医科大学/tianjin medical university">
-              <span class="poster-no">#16</span>
-              <h4>The role of USP10-induced METTL3 deubiquitination in endothelium-dependent vasodilation impairment and hypertension</h4>
-              <p>冯倩倩/Feng Qianqian</p>
-              <small>天津医科大学/Tianjin Medical University</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="刘显威 creb1-regulated slc39a1 attenuates alcoholic liver disease by orchestrating autophagy and mitophagy southern university of science and technology">
-              <span class="poster-no">#17</span>
-              <h4>Creb1-regulated slc39a1 attenuates alcoholic liver disease by orchestrating autophagy and mitophagy</h4>
-              <p>刘显威</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="刘梓忻 vcan accelerates extracellular matrix remodeling in pulmonary fibrosis by stabilizing tgf-β receptor ii southern university of science and technology">
-              <span class="poster-no">#18</span>
-              <h4>VCAN accelerates extracellular matrix remodeling in pulmonary fibrosis by stabilizing TGF-β receptor II</h4>
-              <p>刘梓忻</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="刘英杰 integrative genetic analyses for drug repurposing identify emodin as a candidate modulator of stat3 signaling in abdominal aortic aneurysm southern university of science and technology">
-              <span class="poster-no">#19</span>
-              <h4>Integrative genetic analyses for drug repurposing identify emodin as a candidate modulator of STAT3 signaling in abdominal aortic aneurysm</h4>
-              <p>刘英杰</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="吴阳灿 wu yangcan a nanobody-based biosensor as a universal platform for west nile virus ns3 protein detection southern university of science and technology">
-              <span class="poster-no">#20</span>
-              <h4>A Nanobody-based Biosensor as a Universal Platform for West Nile Virus NS3 Protein Detection</h4>
-              <p>吴阳灿 WU Yangcan</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="周冰宸  development and antitumor mechanistic study of bifunctional glyco-adc targeting tumor-associated muc1 southern university of science and technology">
-              <span class="poster-no">#21</span>
-              <h4> Development and Antitumor Mechanistic Study of Bifunctional Glyco-ADC Targeting Tumor-Associated MUC1</h4>
-              <p>周冰宸</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="周欣  association between aspirin use before 16 weeks of gestation and early postpartum cardiometabolic risk: an electronic health record–based study 重复 天津医科大学总医院">
-              <span class="poster-no">#22</span>
-              <h4> Association Between Aspirin Use Before 16 Weeks of Gestation and Early Postpartum Cardiometabolic Risk: An Electronic Health Record–Based Study 重复</h4>
-              <p>周欣</p>
-              <small>天津医科大学总医院</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="尹泽群 intermittent fasting promotes atherosclerotic plaque regression via the cholesterol-independent bmal1-mertk-efferocytosis axis 中国科学技术大学 university of science and technology of china">
-              <span class="poster-no">#23</span>
-              <h4>Intermittent Fasting Promotes Atherosclerotic Plaque Regression via the Cholesterol-independent BMAL1-MERTK-Efferocytosis Axis</h4>
-              <p>尹泽群</p>
-              <small>中国科学技术大学 University of Science and Technology of China</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="庄子琳 dissecting the genetic basis of stenotrophomonas maltophilia-phage interactions and constructing a phage susceptibility prediction model southern university of science and technology">
-              <span class="poster-no">#24</span>
-              <h4>Dissecting the Genetic Basis of Stenotrophomonas maltophilia-Phage Interactions and Constructing a Phage Susceptibility Prediction Model</h4>
-              <p>庄子琳</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="张会田 huitian zhang treatment of pulmonary fibrosis with rvg10, a peptide targeting na+/k+ atpase southern university of science and technology">
-              <span class="poster-no">#25</span>
-              <h4>Treatment of Pulmonary Fibrosis with RVG10, a peptide targeting Na+/K+ ATPase</h4>
-              <p>张会田 Huitian Zhang</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="张弛 macrophage gpnmb attenuates abdominal aortic aneurysm through promoting efferocytosis and restraining inflammation southern university of science and technology">
-              <span class="poster-no">#26</span>
-              <h4>Macrophage GPNMB attenuates abdominal aortic aneurysm through promoting efferocytosis and restraining inflammation</h4>
-              <p>张弛</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="张鹏威 pengwei zhang dissecting the pleiotropic genetic architecture linking telomere biology to chronic respiratory diseases and lung function southern university of science and technology">
-              <span class="poster-no">#27</span>
-              <h4>Dissecting the pleiotropic genetic architecture linking telomere biology to chronic respiratory diseases and lung function</h4>
-              <p>张鹏威 Pengwei Zhang</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="强媞媞 differential impact of recruited and resident macrophages on hypoxia-induced pulmonary hypertension 天津医科大学">
-              <span class="poster-no">#28</span>
-              <h4>Differential Impact of Recruited and Resident Macrophages on Hypoxia-Induced Pulmonary Hypertension</h4>
-              <p>强媞媞</p>
-              <small>天津医科大学</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="李京格 association between aspirin use before 16 weeks of gestation and early postpartum cardiometabolic risk: an electronic health record–based study 天津医科大学总医院">
-              <span class="poster-no">#29</span>
-              <h4>Association Between Aspirin Use Before 16 Weeks of Gestation and Early Postpartum Cardiometabolic Risk: An Electronic Health Record–Based Study</h4>
-              <p>李京格</p>
-              <small>天津医科大学总医院</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="李晓钰 xiaoyu li nitrate-sialin2 axis couples er-mitochondrial calcium signaling with fatty acid metabolism to drive white adipose browning 首都医科大学">
-              <span class="poster-no">#30</span>
-              <h4>Nitrate-Sialin2 Axis Couples ER-Mitochondrial Calcium Signaling with Fatty Acid Metabolism to Drive White Adipose Browning</h4>
-              <p>李晓钰 Xiaoyu Li</p>
-              <small>首都医科大学</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="李浩君 li haojun an mrna-based fc-gdf15 therapy for obesity and metabolic disorders in mice southern university of science and technology">
-              <span class="poster-no">#31</span>
-              <h4>An mRNA-based Fc-GDF15 therapy for obesity and metabolic disorders in mice</h4>
-              <p>李浩君 LI HAOJUN</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="李艺哲li yizhe senescent pasmcs drive pulmonary hypertension via h3k9 modification reprogramming–mediated sasp expression 天津医科大学/tianjin medical university">
-              <span class="poster-no">#32</span>
-              <h4>Senescent PASMCs drive pulmonary hypertension via H3K9 modification reprogramming–mediated SASP expression</h4>
-              <p>李艺哲Li Yizhe</p>
-              <small>天津医科大学/Tianjin Medical University</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="杨佳雯 yang,jiawen cooperative neutralization of pldb toxicity by three immunity proteins in pseudomonas aeruginosa southern university of science and technology">
-              <span class="poster-no">#33</span>
-              <h4>Cooperative neutralization of PldB toxicity by three immunity proteins in Pseudomonas aeruginosa</h4>
-              <p>杨佳雯 YANG,Jiawen</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="杨清 association between aspirin use before 16 weeks of gestation and early postpartum cardiometabolic risk: an electronic health record–based study重复 天津医科大学总医院">
-              <span class="poster-no">#34</span>
-              <h4>Association Between Aspirin Use Before 16 Weeks of Gestation and Early Postpartum Cardiometabolic Risk: An Electronic Health Record–Based Study重复</h4>
-              <p>杨清</p>
-              <small>天津医科大学总医院</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="杨红琴 splenic cd8+ t cell-derived sema4d promotes pulmonary hypertension  southern university of science and technology">
-              <span class="poster-no">#35</span>
-              <h4>Splenic CD8+ T Cell-Derived Sema4D Promotes Pulmonary Hypertension </h4>
-              <p>杨红琴</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="林佛兰 structural basis of nucleosomal h4k20 recognitionand methylationby suv420h1 methyltransferase southern university of science and technology">
-              <span class="poster-no">#36</span>
-              <h4>Structural basis of nucleosomal H4K20 recognitionand methylationby SUV420H1 methyltransferase</h4>
-              <p>林佛兰</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="梁晓玉 bioengineered macrophage nanocarriers for atorvastatin-mediated foam cell targeting in atherosclerosis 天津大学中心医院/天津市第三中心医院">
-              <span class="poster-no">#37</span>
-              <h4>Bioengineered Macrophage Nanocarriers for Atorvastatin-Mediated Foam Cell Targeting in Atherosclerosis</h4>
-              <p>梁晓玉</p>
-              <small>天津大学中心医院/天津市第三中心医院</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="王昕滢 xinying wang high-throughput dissection of mitochondrial uncharacterized proteins’ function via in vivo perturb-seq southern university of science and technology">
-              <span class="poster-no">#38</span>
-              <h4>High-throughput dissection of mitochondrial uncharacterized proteins’ function via in vivo perturb-seq</h4>
-              <p>王昕滢 Xinying Wang</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="王晨 engineering a versatile hcv protease-based platform for conditional protein manipulation in mammalian cells southern university of science and technology">
-              <span class="poster-no">#39</span>
-              <h4>Engineering a versatile HCV protease-based platform for conditional protein manipulation in mammalian cells</h4>
-              <p>王晨</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="蔡文斌 prostaglandin d2 receptor (dp2) aggravates atherosclerosis byinducing endothelial cell ferroptosis via mediating cholesterol metabolism disorders 天津医科大学/tianjin medical university">
-              <span class="poster-no">#40</span>
-              <h4>Prostaglandin D2 Receptor (DP2) Aggravates Atherosclerosis byInducing Endothelial Cell Ferroptosis via Mediating Cholesterol Metabolism Disorders</h4>
-              <p>蔡文斌</p>
-              <small>天津医科大学/Tianjin Medical University</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="谭远洋 yuanyang tan angiopoietin-like 4 controls aberrant alveolar epithelial fate during lung fibrotic remodeling 北京理工大学 beijing institute of technology">
-              <span class="poster-no">#41</span>
-              <h4>Angiopoietin-like 4 controls aberrant alveolar epithelial fate during lung fibrotic remodeling</h4>
-              <p>谭远洋 Yuanyang Tan</p>
-              <small>北京理工大学 Beijing institute of technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="郑岳玲 yueling zheng construction of a ferritin-based spytag-spycatcher self-assembling vaccine and its evaluation against pseudomonas aeruginosa infection southern university of science and technology">
-              <span class="poster-no">#42</span>
-              <h4>Construction of a Ferritin-Based SpyTag-SpyCatcher Self-Assembling Vaccine and Its Evaluation Against Pseudomonas aeruginosa Infection</h4>
-              <p>郑岳玲 Yueling Zheng</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="陈晓琳  xiaolin chen ephb2 -efnb1 signaling axis regulates macrophage-vascular smooth muscle cell crosstalk to promote pulmonary arterial hypertension
- southern university of science and technology">
-              <span class="poster-no">#43</span>
-              <h4>EPHB2 -EFNB1 Signaling Axis Regulates Macrophage-Vascular Smooth Muscle Cell Crosstalk to Promote Pulmonary Arterial Hypertension
-</h4>
-              <p>陈晓琳  Xiaolin Chen</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="陈桂兰 visualizing developmental stalling in pediatric brain tumors via generative ai  southern university of science and technology">
-              <span class="poster-no">#44</span>
-              <h4>Visualizing Developmental Stalling in Pediatric Brain Tumors via Generative AI </h4>
-              <p>陈桂兰</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="陈默 mo chen systemic ros–driven oxidized phospholipid–platelet–net cascade orchestrates coronary no-reflow southern university of science and technology">
-              <span class="poster-no">#45</span>
-              <h4>Systemic ROS–Driven Oxidized Phospholipid–Platelet–NET Cascade Orchestrates Coronary No-Reflow</h4>
-              <p>陈默 Mo Chen</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="高星悦 a multivalent mrna-lnp cocktail vaccine confers superior efficacy against staphylococcus aureus infection southern university of science and technology">
-              <span class="poster-no">#46</span>
-              <h4>A multivalent mRNA-LNP cocktail vaccine confers superior efficacy against Staphylococcus aureus infection</h4>
-              <p>高星悦</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="黄妍虹 huang yanhong human airway organoids for bacterial-host interaction studies: methods, insights and translational promise southern university of science and technology">
-              <span class="poster-no">#47</span>
-              <h4>Human airway organoids for bacterial-host interaction studies: methods, insights and translational promise</h4>
-              <p>黄妍虹 Huang Yanhong</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="黄建荣 bioorthogonal metabolic labeling identifies sgcg as a surface target for enrichment of cardiomyocyte-derived small extracellular vesicles southern university of science and technology">
-              <span class="poster-no">#48</span>
-              <h4>Bioorthogonal Metabolic Labeling Identifies SGCG as a Surface Target for Enrichment of Cardiomyocyte-Derived Small Extracellular Vesicles</h4>
-              <p>黄建荣</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="龙智辉 genetic dissection of an enhancer controlling the myh6-myh7 cluster in the heart southern university of science and technology">
-              <span class="poster-no">#49</span>
-              <h4>Genetic Dissection of an Enhancer Controlling the Myh6-Myh7 Cluster in the heart</h4>
-              <p>龙智辉</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="gang fan a peptide-based protac targeting tak1 improves obesity-associated cerebrovascular dysfunction shenzhen university affiliated nanshan hospital">
-              <span class="poster-no">#50</span>
-              <h4>A peptide-based PROTAC targeting TAK1 improves obesity-associated cerebrovascular dysfunction</h4>
-              <p>Gang Fan</p>
-              <small>Shenzhen University Affiliated Nanshan Hospital</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="xinyu liu hypothalamic scgn alleviates sepsis-induced inflammation and lung injury via the oxt-oxtr axis shenzhen university affiliated nanshan hospital">
-              <span class="poster-no">#51</span>
-              <h4>Hypothalamic SCGN Alleviates Sepsis-Induced Inflammation and Lung Injury via the OXT-OXTR Axis</h4>
-              <p>Xinyu Liu</p>
-              <small>Shenzhen University Affiliated Nanshan Hospital</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="孙山虎 exercise-induced metabolites influence health via epigenetic modifications southern university of science and technology">
-              <span class="poster-no">#52</span>
-              <h4>Exercise-Induced Metabolites Influence Health via Epigenetic Modifications</h4>
-              <p>孙山虎</p>
-              <small>Southern University of Science and Technology</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="changzhi liu association between serum chloride-to-sodium ratio and risk of abdominal aortic aneurysm: a diabetes-stratified study using restricted cubic spline and mediation analysis university of hong kong">
-              <span class="poster-no">#53</span>
-              <h4>Association between Serum Chloride-to-Sodium Ratio and Risk of Abdominal Aortic Aneurysm: A Diabetes-Stratified Study Using Restricted Cubic Spline and Mediation Analysis</h4>
-              <p>Changzhi Liu</p>
-              <small>University of Hong Kong</small>
-            </article>
-            
-
-            <article class="poster-card" data-poster-text="lei lyu an unsupervised neural network for categorizing ascending thoracic aortic aneurysms into geometric subgroups and their hemodynamic properties the first affiliated hospital of kunming medical university">
-              <span class="poster-no">#54</span>
-              <h4>An unsupervised neural network for categorizing ascending thoracic aortic aneurysms into geometric subgroups and their hemodynamic properties</h4>
-              <p>Lei Lyu</p>
-              <small>The First Affiliated Hospital Of Kunming Medical University</small>
-            </article>
-            
-      </div>
+      <div class="poster-grid" id="posterGrid"></div>
     </section>
 
+    <!-- CLOSING -->
     <section class="closing">
-      <img src="assets/asvb-brand.jpg" alt="ASVB meeting visual">
-      <div>
+      <div class="closing-visual">
+        <img src="assets/asvb-brand.jpg" alt="ASVB">
+      </div>
+      <div class="closing-text">
         <p class="eyebrow">Contact</p>
-        <h2>11th ASVB Meeting Organizing Committee</h2>
-        <p>Please check your email for individual assignments. If there is any discrepancy in your schedule, presentation title, role, or participation arrangement, contact the organizing committee.</p>
-        <a href="mailto:pharmc@sustech.edu.cn">pharmc@sustech.edu.cn</a>
+        <h2>11th ASVB Organizing Committee</h2>
+        <p>For any questions regarding your schedule, presentation, or participation, please reach out to the organizing committee.</p>
+        <a class="btn-primary" href="mailto:pharmc@sustech.edu.cn">pharmc@sustech.edu.cn</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <span>11th Scientific Meeting of ASVB · Singapore · 2026</span>
-    <a href="assets/6.2-ASVB-Schedule.pdf">Latest schedule PDF</a>
+    <div class="footer-content">
+      <div>
+        <strong>11th ASVB Scientific Meeting</strong>
+        <p>Innovation · Precision · Collaboration</p>
+      </div>
+      <div class="footer-links">
+        <a href="assets/6.2-ASVB-Schedule.pdf">Latest Schedule PDF</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Asian Society for Vascular Biology. Hosted at National University of Singapore.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
