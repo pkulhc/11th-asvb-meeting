@@ -5,9 +5,15 @@
 // Mobile nav toggle
 const toggle = document.querySelector('.mobile-toggle');
 const navLinks = document.querySelector('.nav-links');
-toggle?.addEventListener('click', () => navLinks?.classList.toggle('open'));
+function setNavOpen(open) {
+  if (!navLinks || !toggle) return;
+  navLinks.classList.toggle('open', open);
+  toggle.setAttribute('aria-expanded', String(open));
+}
+toggle?.setAttribute('aria-expanded', 'false');
+toggle?.addEventListener('click', () => setNavOpen(!navLinks?.classList.contains('open')));
 navLinks?.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => navLinks.classList.remove('open'));
+  a.addEventListener('click', () => setNavOpen(false));
 });
 
 // ---------- HTML escape ----------
